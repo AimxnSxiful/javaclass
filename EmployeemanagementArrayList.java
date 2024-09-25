@@ -181,12 +181,12 @@ public void Display(){
 
 
         System.out.println(formattedDT);
-        System.out.println("Payslip from :"+ Lastmonth +" to " + nowD +"for " + Payslip );
+        System.out.println("Payslip from :"+ Lastmonth +" to " + nowD +" for " + Payslip );
 
     Predicate<Double>isGreaterThanThen = (num) -> num > 5000;
 
     if (isGreaterThanThen.test(bonus)){
-        System.out.println("Congrats brother,you are Hardqworker:)");
+        System.out.println("Congrats brother,you are Hardworker:)");
     } else{
         System.out.println("Go work harder bruh :|");
     }
