@@ -3,6 +3,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.Period;
+import java.util.function.Predicate;
 
 
 public class EmployeemanagementArrayList {
@@ -182,8 +183,9 @@ public void Display(){
         System.out.println(formattedDT);
         System.out.println("Payslip from :"+ Lastmonth +" to " + nowD +"for " + Payslip );
 
+    Predicate<Double>isGreaterThanThen = (num) -> num > 5000;
 
-    if (bonus>5000){
+    if (isGreaterThanThen.test(bonus)){
         System.out.println("Congrats brother,you are Hardqworker:)");
     } else{
         System.out.println("Go work harder bruh :|");
